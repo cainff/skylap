@@ -1,0 +1,86 @@
+/* line 1, ../sass/_connexion.scss */
+.input_type {
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 6%;
+  height: 30px;
+}
+
+/* line 9, ../sass/_connexion.scss */
+.form_type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* line 16, ../sass/_connexion.scss */
+.wrap-connexion {
+  width: 30%;
+  margin: 0 auto;
+}
+
+/* line 21, ../sass/_connexion.scss */
+.send_button {
+  border: 1px solid aliceblue;
+  border-radius: 5px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background-color: aliceblue;
+  height: 45px;
+}
+
+/* line 1, ../sass/_dashboard.scss */
+#head_dashboard {
+  margin: 0 auto;
+  width: 90%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, ../sass/_dashboard.scss */
+.logo {
+  display: flex;
+  /* justify-content: flex-start; */
+  height: 100px;
+  width: 10%;
+  /* text-align: center; */
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* line 20, ../sass/_dashboard.scss */
+.button {
+  height: 100%;
+  width: 20%;
+  justify-content: space-between;
+  display: flex;
+}
+
+/* line 29, ../sass/_dashboard.scss */
+.table {
+  width: 100%;
+}
+
+/* line 35, ../sass/_dashboard.scss */
+.table th {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  width: 6%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 43, ../sass/_dashboard.scss */
+.table td {
+  text-align: center;
+}
+
+/* line 47, ../sass/_dashboard.scss */
+.table tr {
+  background-color: aliceblue;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

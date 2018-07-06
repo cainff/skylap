@@ -1,0 +1,54 @@
+#head_dashboard {
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex; 
+    /* justify-content: flex-start; */
+    height: 100px;
+    width: 10%;
+    /* text-align: center; */
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.button {
+    height: 100%;
+    width: 20%;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.table {
+    width: 100%;
+}
+
+
+
+.table th {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 6%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table td {
+    text-align: center;
+}
+
+.table tr {
+    background-color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+

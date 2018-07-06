@@ -10,7 +10,7 @@ const user = {
 
 /* GET users listing. */
 router.get('/login', function (req, res, next) {
-    res.render('connexion')
+    res.render('login')
 });
 
 router.post('/login', (req, res, next) => {
@@ -27,7 +27,7 @@ router.get('/dashboard', (req, res, next) => {
         download: true,
         dynamicTyping: true,
         complete: (results) => {
-            res.render('admin', {
+            res.render('dashboard', {
                 data: results.data
             })
         }
