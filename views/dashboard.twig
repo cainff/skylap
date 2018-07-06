@@ -1,0 +1,94 @@
+{% extends 'layout.twig' %}
+
+{% block body %}  
+     
+    <div id="head_dashboard">
+       <div class="logo">LOGO</div>
+       <div class="button">
+           <input type="submit" class="send_button">
+           <input type="submit" class="send_button">
+           
+       </div>
+   </div>
+   
+   <div class="wrap-table">
+   
+           <div class="table">
+          <table>
+            <tr>
+              <th><a>IATA</a></th>
+              <th><a>Nom de la compagnie</a></th>
+              <th><a>Nom complet</a></th>
+              <th><a>Poids cabine</a></th>
+              <th><a>Taille du bagage à main</a></th>
+              <th><a>Taille soute</a></th>
+              <th><a>Poids max des bagages</a></th>
+              <th><a>Service à bord</a></th>
+              <th><a>WIFI</a></th>
+              <th><a>Alliance</a></th>
+              <th><a>Telephone</a></th>
+              <th><a>Site web</a></th>
+              <th><a>Nationalité</a></th>
+              <th><a>Aéroport de base</a></th>
+              <th><a>Siege social</a></th>
+              <th><a>Date de création</a></th>
+              <th><a>Fin d'activité</a></th>
+              <th><a>Ponctualité momondo</a></th>
+              <th><a>Vols retardés momondo</a></th>
+              <th><a>Vols annulé momondo</a></th>
+              <th><a>Age moyen de la flotte</a></th>
+              <th><a>Taille de la flotte</a></th>
+              <th><a>Programme de fidélité</a></th>
+              <th><a>Avion 1</a></th>
+              <th><a>Quantité 1</a></th>
+              <th><a>Avion 2</a></th>
+              <th><a>Quantité 2</a></th>
+              <th><a>Avion 3</a></th>
+              <th><a>Quantité 3</a></th>
+              <th><a>Avion 4</a></th>
+              <th><a>Quantité 4</a></th>
+              <th><a>Avion 5</a></th>
+              <th><a>Quantité 5</a></th>
+              <th><a>Avion 6</a></th>
+              <th><a>Quantité 6</a></th>
+              <th><a>Avion 7</a></th>
+              <th><a>Quantité 7</a></th>
+              <th><a>Avion 8</a></th>
+              <th><a>Quantité 8</a></th>
+              <th><a>Avion 9</a></th>
+              <th><a>Quantité 9</a></th>
+              <th><a>Avion 10</a></th>
+              <th><a>Quantité 10</a></th>
+              <th><a>Avion 11</a></th>
+              <th><a>Quantité 11</a></th>
+              <th><a>Avion 12</a></th>
+              <th><a>Quantité 12</a></th>
+              <th><a>Avion 13</a></th>
+              <th><a>Quantité 13</a></th>
+              <th><a>Avion 14</a></th>
+              <th><a>Quantité 14</a></th>
+              <th><a>Avion 15</a></th>
+              <th><a>Quantité 15</a></th>
+              
+            </tr>
+            {% for row in data %}
+                <tr>
+              <td>{{row.IATA}}</td>
+              <td>{{row['nom de la compagnie']}}</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            {% endfor%}
+          </table>
+        </div>
+    </div>
+
+{% endblock %}

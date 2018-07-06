@@ -1,0 +1,29 @@
+.input_type {
+
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 6%;
+    height: 30px;
+}
+
+.form_type {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.wrap-connexion {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.send_button {
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: aliceblue;
+    height: 45px;
+}
