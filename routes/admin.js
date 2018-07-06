@@ -72,4 +72,20 @@ router.get('/dashboard/compagny/add', (req, res, next) => {
     res.render('add')
 })
 
+router.post('/dashboard/column', (req, res, next) => {
+    const file = fs.createReadStream('public/csv/data.csv')
+    Papa.parse(file, {
+        header: true,
+        download: true,
+        dynamicTyping: true,
+        complete: (results) => {
+            for (let comp of results.data) {
+                //todo: remplacer tout les champs par ceux reçu
+                comp[req.body.value] = ''
+            }
+            res.redirect('/admin/dashboard')
+        }
+    })
+})
+
 module.exports = router;

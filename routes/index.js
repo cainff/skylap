@@ -29,4 +29,23 @@ router.get('/:compagny', function (req, res, next) {
         }
     })
 });
+
+router.get('/search', function(req, res, next){
+    var file = fs.createReadStream('./public/assets/data_companies.csv')
+
+    Papa.parse(file, {
+        header: true,
+        download: true,
+        dynamicTyping: true,
+
+        complete: (results) => {
+            console.log('ok');
+            var data = [];
+            for (let comp of results.data) {
+                data.push(comp['nom de la compagnie'].split(' ').join('-').toLowerCase());
+            }
+            res.end(JSON.stringify(data));
+        }
+    })
+})
 module.exports = router;
