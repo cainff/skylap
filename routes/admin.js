@@ -36,8 +36,40 @@ router.get('/dashboard', (req, res, next) => {
 
 router.get('/dashboard/compagny/:iata', (req, res, next) => {
     let iata = req.params.iata
-    
-    console.log(iata)
+    const file = fs.createReadStream('public/csv/data.csv')
+    Papa.parse(file, {
+        header: true,
+        download: true,
+        dynamicTyping: true,
+        complete: (results) => {
+            for (let comp of results.data) {
+                if (comp.IATA == iata) {
+                    res.render('add', {
+                        data: comp
+                    })
+                }
+            }
+        }
+    })
+})
+
+router.post('/dashboard/compagny/:iata', (req, res, next) => {
+    let iata = req.params.iata
+    const file = fs.createReadStream('public/csv/data.csv')
+    Papa.parse(file, {
+        header: true,
+        download: true,
+        dynamicTyping: true,
+        complete: (results) => {
+            for (let comp of results.data) {
+                //todo: remplacer tout les champs par ceux reçu
+            }
+        }
+    })
+})
+
+router.get('/dashboard/compagny/add', (req, res, next) => {
+    res.render('add')
 })
 
 module.exports = router;
