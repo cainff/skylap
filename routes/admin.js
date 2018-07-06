@@ -83,7 +83,11 @@ router.post('/dashboard/column', (req, res, next) => {
                 //todo: remplacer tout les champs par ceux reçu
                 comp[req.body.value] = ''
             }
-            res.redirect('/admin/dashboard')
+            fs.writeFile(file, results.data, function (err) {
+                if (err) throw err;
+                console.log('Saved!');
+                res.redirect('/admin/dashboard')
+            });
         }
     })
 })

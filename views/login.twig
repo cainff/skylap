@@ -3,9 +3,9 @@
 {% block body %}  
   
   <div class="wrap-connexion">
-       <form class="form_type" method="" action="">
-           <input class="input_type" type="text" name="login" placeholder="Login">
-           <input class="input_type" type="text" name="password" placeholder="Password">
+       <form class="form_type" method="post" action="/admin/login">
+           <input class="input_type" type="email" name="mail" placeholder="example@mail.com">
+           <input class="input_type" type="password" name="password" placeholder="Password">
            <input type="submit" class="send_button">
        </form> 
    </div>
